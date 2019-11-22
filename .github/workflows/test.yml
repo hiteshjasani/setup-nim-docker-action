@@ -14,3 +14,13 @@ jobs:
         who-to-greet: 'Mona the Octocat'
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Get Nim version
+      run: echo "Nim version = ${{ steps.hello.outputs.nim_version }}"
+    - name: Get path to nim compiler
+      run: echo "nim bin path = ${{ steps.hello.outputs.nim_bin_path }}"
+    - name: Get Nimble version
+      run: echo "Nimble version = ${{ steps.hello.outputs.nimble_version }}"
+    - name: Get path to nimble package manager
+      run: echo "nimble bin path = ${{ steps.hello.outputs.nimble_bin_path }}"
+    - name: Get Nimble installed package list
+      run: echo "Nimble packages = ${{ steps.hello.outputs.nimble_pkgs }}"

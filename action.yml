@@ -8,6 +8,16 @@ inputs:
 outputs:
   time:
     description: 'The time we greeted you'
+  nim_version:
+    description: 'Version of Nim compiler'
+  nim_bin_path:
+    description: 'Path to nim compiler'
+  nimble_version:
+    description: 'Version of Nimble package manager'
+  nimble_bin_path:
+    description: 'Path to nimble package manager'
+  nimble_pkgs:
+    description: 'List of installed nimble packages'
 runs:
   using: 'docker'
   image: 'Dockerfile'
